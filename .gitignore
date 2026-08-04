@@ -1,0 +1,26 @@
+﻿# Node / npm
+node_modules/
+dist/
+coverage/
+*.log
+# Vite / build artifacts
+.vite/
+.vitepress/
+# Docker
+docker-compose.override.yml
+.docker/
+# OS / editor artefacts
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+# Secrets (never commit)
+.env
+.env.* 
+*.pem
+*.key
+# Build cache
+/.cache
+/.parcel-cache
