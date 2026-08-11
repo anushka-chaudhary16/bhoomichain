@@ -1,0 +1,42 @@
+.transactions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.full-width-card {
+  padding: 1.5rem;
+}
+
+.mono-text {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.8);
+}
+
+.status-indicator {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status-indicator.mined {
+  background: rgba(0, 230, 118, 0.1);
+  color: var(--success);
+}
+
+.status-indicator.pending {
+  background: rgba(255, 82, 82, 0.1);
+  color: var(--danger);
+  animation: pulsePending 2s infinite;
+}
+
+@keyframes pulsePending {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+/* Badge colors for TX Types reused from Dashboard.css */

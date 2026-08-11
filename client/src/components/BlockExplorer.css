@@ -1,0 +1,140 @@
+.explorer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.explorer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mine-btn {
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  box-shadow: 0 0 20px rgba(124, 77, 255, 0.4);
+}
+
+.spinner-small {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+.blockchain-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.block-card {
+  width: 100%;
+  max-width: 600px;
+  padding: 1.5rem;
+  border-top: 4px solid var(--accent);
+  transition: transform 0.3s ease;
+}
+
+.block-card:hover {
+  transform: scale(1.02);
+  border-top-color: var(--primary);
+  box-shadow: 0 10px 30px rgba(0, 212, 255, 0.15);
+}
+
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dashed rgba(255,255,255,0.1);
+}
+
+.block-header h4 {
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.block-time {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.5);
+}
+
+.hash-row {
+  display: flex;
+  margin-bottom: 0.8rem;
+  font-family: monospace;
+  font-size: 0.9rem;
+  background: rgba(0,0,0,0.3);
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.hash-label {
+  color: rgba(255,255,255,0.6);
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.hash-value {
+  color: #fff;
+  word-break: break-all;
+}
+
+.hash-value.current {
+  color: var(--success);
+}
+
+.hash-value.previous {
+  color: var(--accent);
+}
+
+.block-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(255,255,255,0.1);
+}
+
+.bst {
+  display: flex;
+  flex-direction: column;
+}
+
+.bst span {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+}
+
+.bst strong {
+  font-size: 1.2rem;
+  color: var(--text-heading);
+}
+
+.chain-link {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  opacity: 0.6;
+}
+
+.link-arrow {
+  font-size: 1.5rem;
+  animation: pulseArrow 2s infinite;
+}
+
+@keyframes pulseArrow {
+  0% { transform: translateY(0); opacity: 0.3; }
+  50% { transform: translateY(5px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.3; }
+}

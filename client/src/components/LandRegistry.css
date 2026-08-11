@@ -1,0 +1,71 @@
+.registry-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.registry-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.register-form-section, .lands-list-section {
+  padding: 1.5rem;
+}
+
+.register-form-section h3, .lands-list-section h3 {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 0.8rem;
+}
+
+.badge.success {
+  background: rgba(0, 230, 118, 0.2);
+  color: var(--success);
+  border: 1px solid var(--success);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 450px;
+  padding: 2rem;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.2);
+}
+
+.modal-desc {
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .registry-grid {
+    grid-template-columns: 1fr;
+  }
+}
